@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1.0"
+    />
+    <link rel="stylesheet" href="style.css" />
+    <script src="script.js" defer></script>
+    <title>Document</title>
+  </head>
+  <body>
+    <div class="background">
+      <div class="container">
+        <div class="screen">
+          <div class="screen-header">
+            <div class="screen-header-left">
+              <div class="screen-header-button close"></div>
+              <div class="screen-header-button maximize"></div>
+              <div class="screen-header-button minimize"></div>
+            </div>
+            <div class="screen-header-right">
+              <div class="screen-header-ellipsis"></div>
+              <div class="screen-header-ellipsis"></div>
+              <div class="screen-header-ellipsis"></div>
+            </div>
+          </div>
+          <div class="screen-body">
+            <div class="screen-body-item left">
+              <div class="app-title">
+                <span>Calcule a distância da sua nave!</span>
+              </div>
+            </div>
+            <div class="screen-body-item">
+              <div class="app-form">
+                <div class="app-form-group">
+                  <input
+                    type="text"
+                    id="nameNave"
+                    class="app-form-control"
+                    placeholder="Nome da nave"
+                  />
+                </div>
+                <div class="app-form-group">
+                  <input
+                    type="number"
+                    id="numYL"
+                    class="app-form-control"
+                    placeholder="Distância em anos luz"
+                  />
+                </div>
+                <div class="app-form-group">
+                  <select
+                    name=""
+                    id="selectOption"
+                    class="appearance-select"
+                  >
+                    <option value="1">Parsec</option>
+                    <option value="2">Unidade Astronômica</option>
+                    <option value="3">Quilômetros</option>
+                  </select>
+                </div>
+                <div class="app-form-group buttons">
+                  <button class="app-form-button" id="cancel">
+                    CANCEL
+                  </button>
+                  <button class="app-form-button" id="btn">
+                    SEND
+                  </button>
+                </div>
+                <div class="res"></div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="credits">by Alexandre Medina</div>
+      </div>
+    </div>
+  </body>
+</html>
